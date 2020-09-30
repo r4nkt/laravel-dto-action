@@ -1,4 +1,4 @@
-# A (somewhat opinionated) Laravel package to help make preparing and executing actions using data transfer objects a little easier and more uniform.
+# A (somewhat opinionated) Laravel package that makes working with actions and data transfer objects a little easier.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/r4nkt/laravel-dto-action.svg?style=flat-square)](https://packagist.org/packages/r4nkt/laravel-dto-action)
 [![Tests](https://github.com/r4nkt/laravel-dto-action/workflows/run%20tests/badge.svg)](https://github.com/r4nkt/laravel-dto-action/actions?query=workflow%3A"run+tests")
