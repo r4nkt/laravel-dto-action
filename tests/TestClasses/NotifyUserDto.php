@@ -2,8 +2,8 @@
 
 namespace R4nkt\LaravelDtoAction\Tests\TestClasses;
 
-use Spatie\DataTransferObject\DataTransferObject;
 use R4nkt\LaravelDtoAction\ExecutesDtoActions;
+use Spatie\DataTransferObject\DataTransferObject;
 
 class NotifyUserDto extends DataTransferObject
 {
