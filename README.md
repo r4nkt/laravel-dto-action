@@ -18,7 +18,7 @@ Also important to note is the fact that this package is built around [Spatie's](
 
 From time to time you may need to perform tasks or actions in your application or different parts of your code where there isn't an out-of-the-box Laravel solution. Most likely, this is or is related to your business logic. An oft-used example is creating an invoice. This is an action that may need to take place in one of your applications. It will likely require parameters, and it will likely be made up of smaller actions.
 
-The goal of this package is to provide a (somewhat opinionated) way to make, define, and use actions along with data transfer objects (DTOs). You can create `Action` classes and then, when you want to execute that action, you "prep" that class: `$myAction = MyAction::prep();`. You get back a pending action object, which you define, that allows you to provide the parameters necessary for your action to be carried out. When ready, you call `execute()`.
+The goal of this package is to provide a (somewhat opinionated) way to make, define, and use actions along with data transfer objects (DTOs). You can create `Action` classes and then, when you want to execute that action, you "prep" that class: `$myAction = MyAction::dto();`. You get back a pending action object, which you define, that allows you to provide the parameters necessary for your action to be carried out. When ready, you call `execute()`.
 
 Here's an example:
 
