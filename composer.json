@@ -1,0 +1,53 @@
+{
+    "name": "r4nkt/laravel-dto-action",
+    "description": "A (somewhat opinionated) Laravel package to help make preparing and executing actions using data transfer objects a little easier and more uniform.",
+    "keywords": [
+        "r4nkt",
+        "laravel",
+        "data",
+        "transfer",
+        "object",
+        "dto",
+        "action",
+        "execute",
+        "laravel-dto-action"
+    ],
+    "homepage": "https://github.com/r4nkt/laravel-dto-action",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Elkins",
+            "email": "travis.elkins+github@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^6.0|^7.0|^8.0",
+        "spatie/data-transfer-object": "^2.5"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^9.0|^9.3",
+        "symfony/var-dumper": "^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "R4nkt\\LaravelDtoAction\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "R4nkt\\LaravelDtoAction\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
