@@ -11,6 +11,10 @@ jobs:
         os: [ubuntu-latest]
         php: [8.0, 7.4]
         laravel: [8.*, 7.*]
+        # Having prefer-lowest in the matrix seems to introduce problematic
+        # combinations that appear to be unlikely in most circumstances.
+        # Specifically, PHP8/L8 and PHP8/L7 and prefer-lowest yields a version
+        # of mockery/mockery that uses deprecated code.
         dependency-version: [prefer-stable]
         # dependency-version: [prefer-lowest, prefer-stable]
         include:
