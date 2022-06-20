@@ -8,7 +8,7 @@ trait ExecutesDtoActions
 
     public function execute()
     {
-        return resolve($this->getDtoActionClass())->execute($this);
+        return resolve($this->getDtoActionClass())($this);
     }
 
     public function getDtoActionClass()

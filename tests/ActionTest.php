@@ -69,7 +69,7 @@ class ActionTest extends TestCase
 
         $this->partialMock($actionClass, function ($mock) use ($dto) {
             $mock
-                ->shouldReceive('execute')
+                ->shouldReceive('__invoke')
                 ->once()
                 ->with($dto);
         });
@@ -92,7 +92,7 @@ class ActionTest extends TestCase
 
         $this->partialMock($actionClass, function ($mock) use ($dto) {
             $mock
-                ->shouldReceive('execute')
+                ->shouldReceive('__invoke')
                 ->once()
                 ->with($dto);
         });

@@ -8,7 +8,7 @@ class NotifyUserExplicit extends Action
 {
     protected static $dtoClass = NotifyUserDto::class;
 
-    public function execute(NotifyUserDto $dto)
+    public function __invoke(NotifyUserDto $dto)
     {
         // notify user identified by $dto->username...
     }
