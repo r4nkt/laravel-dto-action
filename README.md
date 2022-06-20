@@ -54,7 +54,7 @@ use R4nkt\LaravelDtoAction\Action;
 
 class CreateSubscriber extends Action
 {
-    public function execute(CreateSubscriberDto $dto)
+    public function __invoke(CreateSubscriberDto $dto)
     {
         // code to perform action, using $dto as needed...
     }
